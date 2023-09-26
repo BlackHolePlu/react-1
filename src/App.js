@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import img from './img/images.jpeg';
+import SubmitBtn from './components/submit.js';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <div className="header">
+        <h1>First App</h1>
+      </div>
+      <div className="main">
+        <p><span>Создание первого приложения</span> - это увлекательный и захватывающий опыт, который может помочь вам начать свой путь в мире разработки программного обеспечения. В этом тексте я расскажу о том, как создать первое приложение и какие шаги нужно предпринять для этого.</p>
+      </div>
+      <div className="block">
+        <div className="box">
+          <img src={img} alt="ipsum"/>
+          <h2>ipsum</h2>
+          <p>Для добавления тени к тексту можно воспользоваться CSS свойством text-shadow.</p>
+        </div>
+        <div className="box">
+          <img src={img} alt="ipsum"/>
+          <h2>ipsum</h2>
+          <p>Для добавления тени к тексту можно воспользоваться CSS свойством text-shadow.</p>
+        </div>
+        <div className="box">
+          <img src={img} alt="ipsum"/>
+          <h2>ipsum</h2>
+          <p>Для добавления тени к тексту можно воспользоваться CSS свойством text-shadow.</p>
+        </div>
+      </div>
+      <SubmitBtn></SubmitBtn>
     </div>
   );
 }
